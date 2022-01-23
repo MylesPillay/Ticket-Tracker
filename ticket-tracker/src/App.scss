@@ -8,7 +8,7 @@
 }
 
 .app {
-    background-image: linear-gradient($primary-color, $secondary-color);
+    background-image: linear-gradient($secondary-color, $primary-color);
     width: 100%;
     min-height: 10vh;
     text-align: center;
@@ -22,22 +22,14 @@
     gap: 50px;
 }
 
-.tickettracker__heading {
-    font-size: 50px;
-    padding: 20px;
-}
-
-.tickettracker--scroll {
-    height: 120px;
-    width: 120px;
+.ticketTracker__heading {
+    font-size: 4rem;
+    padding-top: 20px;
+    color: $text-color;
 }
 
 @media screen and (min-width: 700px) {
     .app {
         height: auto;
-    }
-
-    .tickettracker--scroll {
-       display: none;
     }
 }

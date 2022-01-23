@@ -12,6 +12,7 @@ button {
   
   @media screen and (min-width: 700px) {
     button:hover {
-      font-size: 35px;
+      font-size: 33px;
+      cursor: pointer;
     }
   }
