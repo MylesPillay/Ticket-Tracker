@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@use "./assets/sass/_variables.scss" as *;
+@use "./assets/sass/_typography.scss" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+    
+    width: 100%;
+    min-height: 10vh;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tickettracker__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tickettracker__heading {
+    font-size: 50px;
+    padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.tickettracker--scroll {
+    height: 120px;
+    width: 120px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (min-width: 700px) {
+    .app {
+        height: auto;
+    }
+
+    .tickettracker--scroll {
+       display: none;
+    }
 }

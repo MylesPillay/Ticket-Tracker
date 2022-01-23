@@ -1,0 +1,39 @@
+@use "../../assets/sass/variables" as *;
+
+.employeeCard {
+    background-color: rgba(255, 255, 255, 0.788);
+    text-align: center;
+    width: 270px;
+    height: 60vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 40px;
+    margin: 5% 8%;
+    border: 5px solid $primary-color;
+}
+
+.employeeCard__container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    overflow-x: auto;
+}
+
+@media screen and (min-width: 700px) {
+    .employeeCard__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 90vw;
+        margin-left: 5%;
+    }   
+    
+    .employeeCard {
+        width: 230px;
+        height: 40vh;
+        margin: 5%;
+        padding: 0;
+    }
+}
