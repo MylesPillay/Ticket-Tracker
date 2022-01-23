@@ -1,5 +1,7 @@
 @use "../../assets/sass/variables" as *;
 
+
 .employeeCard__name {
-    border-bottom: 2px solid $primary-color;
+    border-bottom: 4px dotted $border-shadow;
+    
 }
