@@ -1,0 +1,13 @@
+@use "../../assets/sass/variables" as *;
+
+
+.employeeCard {
+    &__name {
+        padding-top: 0.5rem;
+    border-bottom: 4px dotted $border-shadow;
+    }
+    &__role{
+    padding-top: 1rem;
+
+        }
+    }

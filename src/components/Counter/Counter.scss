@@ -1,0 +1,32 @@
+@use "../../assets/sass/_buttons.scss" as *;
+@use "../../assets/sass/variables" as *;
+
+.counter {
+    height: 100px;
+    width: 150px;
+    background-color: $primary-color;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 5px;
+    padding-top: 8px;
+    font-size:20px;
+
+    &__button-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1.2rem;
+        justify-content: center;
+        align-items: center;
+        height: 5.5rem;
+        margin-top: -1rem;
+        }
+
+    &__tracker {
+        font-size: 28px;
+        margin-bottom: 0.8rem;
+        }
+    }
+    .fas {
+        color: $text-color;
+
+    }
